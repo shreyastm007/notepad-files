@@ -1,0 +1,45 @@
+1. Blog page/post:
+
+path: ancestry blog
+
+The title should be the page title
+
+Blog Title - hero banner title ,font style is large
+check default background option
+
+button link - /content/ancestry-corp/en-us/blog
+select the properties as per the live site.
+Here is the list of BG position properties, check all the values one by one and set the position as per live site BG position value
+
+Open properties option:
+Go to blog tab:
+Add author name.
+Add featured image, blog title, description, date, month, year.
+Paragraph spacing code:<p><b>&nbsp;</b></p>
+
+2. Press Release.
+
+path: Newsroom
+
+Hero banner , large
+uncheck default background option
+Background Color
+#005c7d
+
+Linear Gradient Angle
+270
+
+Linear Gradient Color 1
+rgba(0,92,125,0.9)
+
+Linear Gradient Color 2
+rgba(113,182,206,0.85)
+
+ button link :/content/ancestry-corp/en-us/newsroom/press-releases
+ 
+Open properties option:
+Go to blog tab:
+
+NO featured image
+Add title, description, date, month, year.
+ 

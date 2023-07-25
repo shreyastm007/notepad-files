@@ -1,0 +1,42 @@
+1.ANCESTRY project:
+
+Creating a dialog box(Video Title) inside video, in modal component.
+Adding the button component.(go to configure,events,on click,open modal)
+Connecting both the components using modalId.(should be similar)
+Then make required changes in modal.js(frontend) and ancestrymodal.html(apps)
+
+Output:When we click on button a modal gets popped and on inspecting the iframe, we get the title.
+-------------------------------------------
+
+2.ANCESTRY-CORPORATE project:
+
+Neither of the post has any images, but both need to match the style of the existing blog posts and press releases. 
+Blog Post: Celebrating 40 Years of Family History Discoveries
+Press Release: Ancestry® Launches Storymaker Studio 
+There are also a few numbers that need to be updated on the Company Facts page.
+
+Done!!!!!
+------------
+Annual(Impact) report page:
+----------------------------------------
+
+3.VueJs project:
+
+1.Reimbrusement portal[ Consists of src, dest, total miles, route]
+2.Prepare a webpage for it and integrate the mapquest.
+3.Enter the src and required destination and the travelling miles are calculated.
+--------------------------------------------
+
+4.
+1. AccordionModel:
+Operation: Added a new field/property Subtitle
+Result: Solved!!!!!
+
+2.ItemListModel:
+Operation: Added a new field/property Title
+Result: Solved!!!!!
+
+3.Button Component:
+Made changes in cq_dialog_box of button component.
+Added an extra color.
+

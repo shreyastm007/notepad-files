@@ -1,0 +1,44 @@
+1. Using the style system:
+
+Open the home page template in the template editor 
+
+Click on the policy icon of the added List Component
+Open the Styles tab of the content policy
+
+Set the Policy Title to speaker policy. Add a style group and call it Grid. 
+Add 2 styles as in the table below. Save the content policy setting by clicking the Done button.
+
+Style Name	CSS Classes
+3 Column	grid-3
+4 Column	grid-4
+
+
+Modify the existing CSS rules by opening the file apps/ancestry/components/content/list/clientlib-speaker/speaker.less in CRXDE Lite. 
+
+.grid-3 .cmp-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 .cmp-list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+2. Add a new Style Group with the name Position: to the existing style of the list component and add the following styles:
+
+Style Name	CSS Classes
+Top		top
+Bottom	bottom
+
+Save the policy.
+
+Remove the rule bottom: 0px; below .speaker__item-container {
+Add the following rules at the end of the file:
+.bottom .speaker__item .speaker__item-container {
+    bottom: 0px;
+}
+
+.top .speaker__item .speaker__item-container {
+    top: 0px;
+}

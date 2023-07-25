@@ -1,0 +1,53 @@
+1. Using the Core Components:
+
+In this exercise we will create the FAQ page and add a title and a text component.
+Adding a carousel component
+
+Go to AEM > Sites.
+Create a page in ancestry with the title: FAQ.
+Open the page.
+Add a title component and set the title to: Have a question?.
+Add a text component and set the text to: Find answers to what you want to know about the conference..
+Add a tabs component to the page.
+As an accordion component is not yet available as a Core Component, we will use the tabs component to display the content.
+Open the tabs dialog:
+Set the title of the first tab to: Pricing information.
+Set the title of the second tab to: Registration information.
+Save the dialog.
+Drag-and-drop a text component to the first tab.
+
+Edit the text component and copy-and-paste the content below:
+What is the registration fee for Summit?
+Are there any discounts for groups?
+
+Select the tabs component. In the toolbar click the Select Panel action and select the second tab from the popover.
+Drag-and-drop a text component to the second tab and copy-and-paste the content below:
+What are the registration policies/terms and conditions?
+What is the cancellation policy?
+
+Inspecting the rendered HTML of the tabs component
+We will have a look at the HTML of the tabs component, especially the CSS classes which is used to ease styling.
+In the page, when viewed as published right-click and select Inspect in the dropdown menu of the browser.
+The CSS classes used for the tabs component are:
+cmp-tabs, cmp-tabs__tablist, cmp-tabs__tab, cmp-tabs__tabpanel and cmp-tabs__tabpanel--active.
+
+
+2. Styling the Core Components:
+Now that we know which CSS classes are available for styling, we will:
+
+Style the tabs component to make the tab titles bold.
+Style the carousel to hide the buttons below the slides.
+Inspect the tabs and the carousel HTML and find out the public CSS classes that should be styled.
+
+In CRXDE Lite open the custom client library style.less file.
+/apps/ancestry/clientlibs/clientlib-site/less/style.less
+Set the font of the tabs titles to bold by adding the following code to the style.less file:
+.cmp-tabs__tab {
+    font-weight: bold;
+}
+Hide the buttons below the slides of the carousel by adding the following code to the style.less file:
+.cmp-carousel__action {
+    display: none;
+}
+Save the file.
+Refresh the page in your browser and notice the changes.

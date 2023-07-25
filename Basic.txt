@@ -1,0 +1,60 @@
+1.First login to workspace, check for maven,eclipse,and AEM ,if not then install.
+
+2.mvn -v(path must be set)
+
+3.java -version (higher than 8)(path must be set) 
+
+4.eclipse(install web development part not the java developers)
+
+5.AEM(http://localhost:4502/libs/granite/core/content/login.html?resource=%2F&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown)
+
+6.Then download the the file from slack.
+https://app.slack.com/client/T02563LQP/D04J5QTHP4J(ancestry.slack.com)
+file name:cms-adobe-aem-develop(1).zip
+
+7.Then create a folder(Training) in D:drive and copy that file to there.
+
+8.Create a new folder for wknd site(folder name:code)
+
+9.Then in command-prompt(run as admin) go for the code folder and paste the below line
+	mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype 
+	-DarchetypeVersion=39 -DappTitle="WKND Sites Project" -DappId="wknd" -DgroupId="com.adobe.aem.guides" -DartifactId="aem-guides-wknd"
+	-Dpackage="com.adobe.aem.guides.wknd" -Dversion="0.0.1-SNAPSHOT" -DaemVersion="6.5.8"
+	
+10.Now import the downloaded file(cms-adobe-aem-develop) to eclipse workspace.
+
+11.For Build go to the command-prompt(cmd) and run the below command.
+mvn clean install -Dsonar.skip=true -DskipTests
+
+12.And for updating the works use below command.
+mvn clean install -PautoInstallPackage -Dsonar.skip=true -DskipTests 
+
+OR:
+
+mvn clean install -PautoInstallPackage -Padobe-public
+
+
+13.To view components in aem:
+Go for CRXDE lite , then go for apps, then ancestry, then components, then content.(here you see all the components)
+	
+	
+14. GitHub: https://github.ancestry.com/Ancestry/cms-adobe-aem
+
+
+15. Working Projects:
+1.Ancestry CORP Support project.
+2.Doc Extr.-OnBase Dev & Integration Svcs.
+3.CSBU project.
+
+E-mail: smanjunat.contractor@ancestry.com
+Username: smanjunat.contractor
+Password: treeS16cb89
+
+git access token:   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
+	
+	
+Dev:
+https://author-ancestry-dev2.adobecqms.net/content/ancestry-corp/en-us.html
+https://www.ancestrydev.com/corporate
+
+

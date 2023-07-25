@@ -1,0 +1,10 @@
+1. AccordionModel:
+Operation: Added a new field/property Subtitle
+Result: Solved!!!!!
+
+2.ItemListModel:
+Operation: Added a new field/property Title
+Result: Solved!!!!!
+
+3.Made changes in cq_dialog_box of button component.
+Added an extra color.

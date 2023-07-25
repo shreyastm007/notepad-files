@@ -1,0 +1,84 @@
+1. Create a Component:
+
+Go to CRXDE Lite in tools in AEM
+Go to /apps/ancestry/components/content.
+Right Click > Create Component.
+Eg: The component contains label(labinfo),title(Lab Info - Ancestry),description,supertype and group(ancestry).
+Press Next > Press OK. Click Save All.
+Under labinfo, rename labinfo.jsp to labinfo.html. Click Save All.
+Open the labinfo.html file, delete the existing code and add the following code:<h2> Lab Info </h2>
+Click Save All.
+
+
+2. Add a component dialog:
+
+In CRXDE Lite, navigate to the following path /apps/core/wcm/components/title/v2/title.
+Copy the cq:dialog node from the title component.
+Paste it under /apps/ancestry/components/content/labinfo.
+Now examine the dialog structure and go to the last items child.
+
+Delete types , defaulttypes and linkURL under the items tab.
+Click on the title node and change the value of the property-name to ./labtitle (by default it is ./jcr:title). Click Save All.
+Right click on the title node and select the copy option.
+Right click the items node above the title node and select paste.
+Rename Copy of title to details. Click Save All.
+
+Select the details node and change the value of the name property to ./labdetails.
+Change the sling:resourceType to granite/ui/components/coral/foundation/form/textarea.
+Change the fieldLabel to Details. Click Save All.
+Open labinfo.html and replace the existing content with the following code:
+
+<div class="ancestry-labinfo">
+     <h2>Lab : ${properties.labtitle}</h2>
+     <p>${properties.labdetails}</p>
+</div>
+
+Click Save All.
+
+
+
+3.Use the component on the page:
+
+Go to the page in the ancestry Site.
+Add the Lab Info component to the page.
+Click on the component and from its action toolbar click on the wrench icon to open its configuration dialog. 
+Once open, you should see the Title and Details input fields in the dialog.
+Enter Values:
+Input	Values
+Title	Getting Started with AEM Development
+Details	In this lab you will learn about basics of AEM Development including creating components, templates, dialog box etc.
+
+
+4. Add Design using Client Library:
+
+In AEM, CSS and Javascript are provided using Client Libraries.
+
+Go to /apps/ancestry/components/content/labinfo.
+Right-Click > Create Node.
+Provide a Name - clientlibs.
+Select the Type - cq:ClientLibraryFolder.
+Click OK to confirm. Click Save All.
+
+Click on the clientlibs folder and add the following multi-value property:
+
+Name : categories
+Type : String
+Value : Note : Keep blank for now
+Multi : Press on Multi button
+
+Click Add and add the following properties:
+ancestry.base
+ancestry.components.labinfo
+Click OK. Click Save All.
+
+Now create a file css.txt in the clientlibs folder. Save the changes.
+Open the file css.txt and add the following code:
+style.css
+Create another file style.css with the following code:
+.ancestry-labinfo {
+    background-color: #000;
+    color: #fff;
+    padding:10px;
+}
+
+5.    /apps/core/wcm/components/carousel/v1/carousel  --->Link for adding carousel component.

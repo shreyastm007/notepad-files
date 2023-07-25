@@ -1,0 +1,6 @@
+Creating a dialog box(Video Title) inside video in modal component.
+Adding the button component.(go to configure,events,on click,open modal)
+Connecting both the components using modalId.(should be similar)
+Then make required changes in modal.js(frontend) and ancestrymodal.html(apps)
+
+Output:When we click on button a modal gets popped and on inspecting the iframe we get the title .

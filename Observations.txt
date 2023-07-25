@@ -1,0 +1,46 @@
+Issues on Ancestry-Corp websites:
+
+1. Ancestry-Corp logo and Searchicon is breaking on both Prod-disp and Domain but it is working fine on Prod-publisher. 
+   Sometimes it will be visible on disp and dom,but vanishes again.
+2. 2023-filter option for CA PR page is actually a dynamic value and was checked on both dev and stage and it was working. 
+   But currently 2023- filter option is not visible on Prod-disp and domain.But available on Prod-publisher.
+3. The 2023-filter option does not filter all the 2023 news pages. The thing is 20 new news pages have been published in this year. 
+   But when we select 2023-filter option only 5 pages are filtered both on Prod-disp and domain.
+
+
+
+Observations on Logo/Image issue:
+
+1.Actual Image link:/content/experience-fragments/ancestry-corp/us/en/site/header/master/_jcr_content/root/header/logo.coreimg.svg/1675365281232/ancestrycorp-logo.svg
+2.Issue: On domain when the image is opened in new tab it is migrating to this link -> /content/experience-fragments/ancestry-corp/us/en/site/header/master/jcr%3acontent/root/header/logo.coreimg.svg/1675365281232.svg
+So, when we open image on new tab it says image is not available.
+3.Same thing is happening with the search logo also.
+
+
+url:
+1.If we select the required page and click on MOVE option, there will be an option called "page name after move" so under this we can modify the url and click next.
+So the url will be changed.
+
+publish later workflow:
+1. The thing is, under the start time of workflow it takes 5hrs 30min before the IST we have initiated. So afternoon when we initiated the process at 12:15 pm , it showed us 6:45am.
+So it is the server settings. So,it is counted as UTC+5:30.
+
+
+
+Observations:
+Issue: 20 new news pages were added onto the site and those new pages are visible on the site. But on selection of 2023 filter option only 5 news pages are visible.
+
+1. Thing is, the 15 pages which we added recently are not visible when 2023 filter option is selected.
+So, I checked the properties with the previous pages and Its fine.
+SO, We can check on one thing, lets clear the cache for these two below links:
+a)/content/dam/ancestry-corp/News-Content-Fragments
+b)/content/ancestry-corp/en-us/newsroom/in-the-news.html
+
+
+1. cms-aem-ancestry-corp -> ui.content -> content -> jcr_root -> content -> experience-fragments
+
+
+
+
+
+

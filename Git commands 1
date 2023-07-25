@@ -1,0 +1,74 @@
+Git:
+
+1.Git is a powerful version control system that enables you to track changes to your codebase. 
+2.Branches allow developers to work on different features, issues, or bug fixes without affecting the project's main codebase.
+One of the key features of Git is its ability to manage branches.
+
+3. To create a local repository, follow these steps:
+First, open your terminal or command prompt and navigate to the directory where you want to create your project.
+
+Then initialize a new Git repository using the following command.
+
+git init (project_name)
+eg: -> git init cricket
+This command creates a new folder for the project called cricket and initializes a new Git repository in that folder.
+The initialization process creates a .git folder within the project folder that stores the files and data for the repository.
+
+4.When a new repository is initialized, Git automatically creates a new primary branch. 
+Depending on your Git settings, that primary branch is created with the name "main", "master".
+
+Navigate down to the project folder:
+
+-> cd cricket
+
+The project folder is our working folder. 
+All of the files for our project should be created, updated, and modified from this folder or subfolders of this folder.
+
+5. This working folder is the folder that Git watches to track our changes.
+
+Optionally, verify the status of the Git repository:
+
+-> git status
+
+
+6.The init command tells us that, it initialized an empty Git repository named: .git in the folder we told it to use.
+The status command provides the status of our repository. At this point in time, we are on the main branch, we have no commits, and we have nothing to commit.
+We now have a local repository!and Let's add some files to the repository so we have something to work with.
+
+
+7.How to Create Files:
+The primary purpose of a repository is to store a snapshot of the files from our working folder at a particular point in time.
+We don't currently have any files in our working folder.
+
+Let's add two simple text files.
+But note that the process of branching covered in this article is the same with any type of code files.
+If you'd prefer to create the two files using the console, type these commands, one at a time:
+If the file doesn't exist, it creates the file.
+
+echo (data inside file)file1 > (name of file)file1.txt
+echo file2 > file2.txt
+
+Use a single greater than > with echo to replace the contents of the file with the specified text.
+Use a double greater than >> to append the text to the end of the file.
+
+
+8.How to Commit Files to the Local Repository:
+Committing files to a local repository requires the following steps:
+
+First, add the files to the Git staging area.
+
+-> git add .
+-> git rm file2.txt(filename) to delete a file
+
+9.Using the . (period) adds all of the files in the working folder (and its subfolders) to the staging area.
+If you only want to add specific files, you can list them instead.
+
+10. Now you're ready to commit the staged files to the local repository.
+
+-> git commit -m "Initial commit"
+Here we commit the files in the Git staging area to the local repository.
+
+The -m option is for a commit message. Follow the -m with the message, in quotes.
+ 
+ 
+

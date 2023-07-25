@@ -1,0 +1,53 @@
+1. Create Templates:
+
+Go to AEM > Tools > General > Templates > eg:(ancestry).
+Click the Create Button.
+Select Empty Page > Next.
+Provide a Template Title -(Ancestry Home Page). Click Create. Click Done.
+
+
+2. Add Policy:
+
+The page has a layout container by default, this is the root element of the page and will provide responsive capabilities to the page.
+Add another layout container as a child of the root layout container.
+Select and Edit the Ancestry Home Page Template.
+Click the root layout container and select the Policy option.
+In the Allowed Components section, check Layout Container from the General component group.
+Click the right icon to the top-right corner to save it.
+Click on the Drag components here area of the layout container, press the + icon and select Layout Container.
+Click the new layout container and press the lock icon to unlock the layout container.
+Click the new layout container and choose the Policy option.
+In Allowed Components search for the ancestry group and check the checkbox to include all components from the ancestry project.
+Go to the General group, and check the Content Fragment, Experience Fragment and Layout Container components.
+In the Select policy dropdown select ancestry default.(on the left side)
+Click right icon on top to save the policy.
+
+
+
+3. Edit Template:
+
+Add Image Component.
+Add the Navigation component after the Image component.
+Double-click the Navigation component:
+Set the Navigation Path (eg:to /content/we-retail/us) ( we will change it once the site structure is ready )
+Check Exclude Navigation root
+Uncheck Collect all child pages
+Set the Navigation Structure Depth to 1
+For the Banner, add another Image Component after Navigation.
+Drag-and-drop the Summit banner image called summit.jpg from the asset browser.
+
+4. Resize Components:
+
+Click on the image component to show its action toolbar and select the Layout option represented by a two-sided arrow icon.
+Once clicked, you should see two drag handle dots left and right of the component. Drag the right dot to resize the component to 2 columns.
+Click on the navigation component, select the Layout option and drag right arrow to fit 9 grid columns or exclude 3 grid columns.
+
+
+5. Enable Templates:
+
+Now that our templates are ready, we can add thumbnail images to templates and enable them.
+Go to templates.
+Select the created Template and click the properties icon.
+Click the Upload Image button, browse in your file system and select it and apply.
+Click Save & Close.
+Select the Template and click Enable. In the popup dialog, click Enable.

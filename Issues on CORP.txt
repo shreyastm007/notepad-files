@@ -1,0 +1,26 @@
+Issues Observations:
+
+I had made some changes with respect to news pages and AncestryCorp logo and searchicon on prod. 
+Its not reflecting on dispatcher and domain, but its rendering on Prod-publisher.
+So, can you please clear the cache for all the 3 below links:
+a)/content/dam/ancestry-corp/News-Content-Fragments
+b)/content/ancestry-corp/en-us/newsroom/in-the-news.html
+c)/content/ancestry-corp/en-us.html
+
+
+Pages for cache clearing:
+
+1./content/ancestry-corp/en-us/contact.html
+2./content/ancestry-corp/en-us/about-ancestry/our-story.html
+3./content/ancestry-corp/en-us/about-ancestry/company-facts.html
+4./content/ancestry-corp/en-us/corporate-responsibility.html
+5./content/ancestry-corp/en-us/investor-relations.html
+6./content/ancestry-corp/en-us/blog.html
+7./content/ancestry-corp/en-us/newsroom/press-releases.html
+8./content/ancestry-corp/en-us/global-newsrooms/ca/newsroom.html
+9./content/ancestry-corp/en-us/global-newsrooms/ca/press-releases.html
+10./content/ancestry-corp/en-us/global-newsrooms/ca/contact.html
+11./content/ancestry-corp/en-us/photo-library.html
+12./content/ancestry-corp/en-us/video-library.html
+13./content/ancestry-corp/en-us/family-history-month.html
+14./content/ancestry-corp/en-us/search-page.html

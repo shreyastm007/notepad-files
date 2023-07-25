@@ -1,0 +1,4 @@
+1.author: https://author-ancestry-stage3.adobecqms.net/content/ancestry-corp/en-us/newsroom/in-the-news.html
+2.dispatcher: https://ancestry-stage3.adobecqms.net/corporate/newsroom/in-the-news
+3.publisher: https://publish6useast1.stage3.ancestry.adobecqms.net/content/ancestry-corp/en-us/newsroom/in-the-news.html
+4.domain: https://www.ancestrystage.com/corporate/newsroom/in-the-news

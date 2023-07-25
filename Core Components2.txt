@@ -1,0 +1,63 @@
+3. Extending the Core Components:
+
+Combine two or more Core Components for a new Component.
+For this purpose, we will use the List component of the Core Component Library.
+Eg:Create the speaker pages and adding to the ancestry home page.
+
+Open the created home page.
+Drag-and-drop a List-component.
+Open the dialog.
+As Build List Using select Fixed list.
+As Options for Fixed List add the following pages:
+Eg:
+/conten/speaker/satya-nadella
+/content/speaker/shantanu-narayen
+Save the dialog.
+
+Create an overlay of the List item HTL-Template to customize the HTML output
+Go to CRXDE Lite and browse to the List component of the Core Component at /apps/core/wcm/components/list/v2/list.
+Then Copy the item.html file and paste the file inside the apps folder at /apps/ancestry/components/content/list.
+
+4. Create a client-side library folder for the list component with the category ancestry.site and put the files speaker.js and speaker.less in this folder. Proceed as follows:
+
+Select the /apps/ancestry/components/content/list 
+Right-Click > Create Node
+Provide a Name - clientlib-speaker
+Select the Type - cq:ClientLibraryFolder
+Click OK to confirm. Click Save All
+Click on the clientlibs folder and add the following multi-value property:
+Name : categories
+Type : String
+Value : Note : Keep blank for now
+Multi : Press on Multi button
+Click OK. Save the changes.
+
+5. Extending the edit dialog:
+
+Sometimes it's also necessary to extend the existing  dialog of a core component.
+In this exercise we will extend the dialog of the list component so that authors can control if the subtitle of a speaker should be displayed or not in the list.
+Browse to the existing dilalog of the list component in CRXDE Lite at the path /apps/core/wcm/components/list/v2/list/cq:dialog.
+Copy the node by opening the context dialog in CRXDE Lite 
+Paste the copied node at path : /apps/ancestry/components/content/list.
+
+Expand the node structure of the dialog up to the tab level.
+
+Delete the listSettings node and rename the itemSettings node to speakerSettings. 
+Change the jcr:title property of that node in speakerSettings to Speaker Settings
+Under the speakerSettings node rename the linkItems subnode to showSubtile and remove all the other nodes at the same level.
+Edit the properties of the showSubtitle node with the following values:
+
+fieldDescription	String	Show subtitle of the Speaker
+name	String	./showSubtitle
+sling:resourceType	String	granite/ui/components/coral/foundation/form/checkbox
+text	String	Show subtitle
+uncheckedValue	String	false
+value	String	true
+
+Save the changes by clicking on the Save All menu item in upper left of CRXDE Lite.
+
+With the help of the Resource Merger feature the new node structure is getting merged with the existing dialog of the list component.
+
+Change the item.html template from the former exercise in CRXDE Lite at the path /apps/ancestry/components/content/list/item.html and 
+add a data-sly-test condition to the subtitle section. 
+<span data-sly-test="${properties.showSubtitle}" class="speaker__item-subtitle">${item.subTitle}</span>

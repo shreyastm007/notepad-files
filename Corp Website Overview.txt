@@ -1,0 +1,20 @@
+Ancestry Corporate Website: 
+
+prod author url:
+1.https://author-ancestry-prod2.adobecqms.net/editor.html/content/ancestry-corp/en-us/community-impact.html
+2.https://author-ancestry-prod2.adobecqms.net/editor.html/content/ancestry-corp/en-us/corporate-sustainability.html
+3.https://author-ancestry-prod2.adobecqms.net/editor.html/content/ancestry-corp/en-us/corporate-responsibility.html
+
+
+Stage domain url's:
+1.https://www.ancestrystage.com/corporate
+2.https://www.ancestrystage.com/corporate/global-newsrooms/au/newsroom
+3.https://www.ancestrystage.com/corporate/global-newsrooms/ca/newsroom
+4.https://www.ancestrystage.com/corporate/global-newsrooms/uk/newsroom
+
+
+prod author url:
+1.https://author-ancestry-prod2.adobecqms.net/content/ancestry-corp/en-us.html?wcmmode=disabled
+2.https://author-ancestry-prod2.adobecqms.net/content/ancestry-corp/en-us/global-newsrooms/au/newsroom.html
+3.https://author-ancestry-prod2.adobecqms.net/content/ancestry-corp/en-us/global-newsrooms/ca/newsroom.html
+4.https://author-ancestry-prod2.adobecqms.net/content/ancestry-corp/en-us/global-newsrooms/uk/newsroom.html

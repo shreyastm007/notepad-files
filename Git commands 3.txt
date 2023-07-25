@@ -1,0 +1,44 @@
+21.To simulate a change to our branch, let's add a line of text to one of our files:
+
+echo info_changes >> file1.txt
+
+Confirm the change by typing out the content of the file:
+type file1.txt		// On windows
+
+
+22.How to Commit Changes to a Branch:
+As we work on a task or issue, such as our info changing task, we commit our changes. The commit stores a snapshot of our working folder along with any staged changes.
+Committing basically stores our progress on the branch for that task or issue.
+
+Here are the steps:
+First, stage the changes to include in the commit:
+-> git add .
+
+
+23.We've used this command before. It tells Git which files we want to include in the commit by adding them to a staging area.
+The . (period) adds all of the files in the working folder (and its subfolders) to the staging area.
+Then commit the files that are in staging:
+-> git commit -m "infochange cricket"
+
+23.This commit command creates a new commit. As we used previously, the -m option signifies that we are providing a commit message. Follow the -m with the message, in quotes.
+Or, if you've only modified or deleted files, not created any new files, you can stage and commit changes to the branch using a single command:
+_____git commit -a -m "infochange cricket"
+The -a option stages all modified and deleted files in the working folder, but does not include any new files.
+This commit command then creates a new snapshot of our working folder (except for any new files) and commits them.
+
+
+24.How to Delete a Branch
+Delete any branch that you no longer need to keep your repository clean and easier to manage.
+
+-> git branch
+If you aren't on the main branch, switch to the main branch:
+
+-> git checkout main
+
+25.You cannot delete the branch you are on. By switching to the main branch you can delete any of the other branches.
+
+Delete the desired task or issue branch:
+
+-> git branch -d login_issue
+The -d option deletes the specified branch from the local repository.
+

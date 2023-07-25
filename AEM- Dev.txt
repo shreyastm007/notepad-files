@@ -1,0 +1,6 @@
+AEM-DEV requirements: Ancestry-Corp
+
+example: aem-ancestrycomoperationsinc-project
+1.js file location: cms-adobe-aem->ui.frontend->src->main->webpack->components-inventory->content->accordion->js->accordion.js
+2.html file location /_cq_design_dialog: cms-adobe-aem->ui.apps->src->main->content->jcr_root->apps->ancestry->components->content->accordion->accordion.html
+3.models file location: cms-adobe-aem->core->src->main->java->com->ancestrycomoperationsinc->core->models->AccordionModels

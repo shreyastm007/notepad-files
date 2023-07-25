@@ -1,0 +1,53 @@
+11. Then you can optionally verify the commit using the log command:
+
+-> git log
+The log command outputs the commit history for the repository with the most recent commit first. 
+Use it whenever you want to see what's happened within that repository.
+
+12.The commit command displays the branch we are on (main), the first few characters of the commit's id, and the commit message.
+It then lists the changed files. In this example, there were 2 files changed and both were insertions (new files).
+
+
+13.The log also displays the person that made the commit (name and email), the commit date, and the commit message.
+We now have our main branch with a single commit.
+
+
+14. How to Create a Branch:
+Create a branch for every task or issue you work on. This ensures that your work on the task or issue is isolated from your existing codebase.
+That makes it easier to work on multiple parts of the project simultaneously, or try out ideas without adversely affecting your main codebase.
+
+Following along with our example, we begin with a task to update the info of the cricket project, to make the look more clear.
+
+15.We create a branch for the task following these steps.
+
+First, switch to the main project branch:
+-> git checkout main/master
+
+
+16. For our particular example, we only have our main branch at this point, so this command isn't necessary. 
+But in general, it's important to ensure you are on the main branch before creating a new branch.
+
+Then create a branch from the current branch:
+-> git branch (branch name) cricket_info
+
+
+17.This branch command creates a branch with the specified name from the current branch. In this case, the branch is named cricket_info.
+But this command does not switch our working folder to the new branch.
+
+Then switch to the new branch:
+-> git checkout cricket_info
+The checkout command checks out the branch so you can work with it.
+
+
+18. Alternatively, you can use a single command to create and switch to the new branch.
+
+-> git checkout -b cricket_info
+The -b option creates a new branch with the provided name and checks out that branch.
+
+19. Optionally, view the list of all branches to confirm the creation of the branch:
+-> git branch
+The branch command lists all existing branches in the repository.
+
+20. Since this is a new branch created from the main branch, the latest commit on the new branch points to the latest commit on the branch it was created from,which is main.
+Now that we have the new branch checked out, we can make changes to our working folder and those changes only impact that branch. 
+Our main codebase remains unchanged.
